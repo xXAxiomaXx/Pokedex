@@ -7,7 +7,7 @@ function App() {
       <img
         src={Logo}
         alt="Logo"
-        className="md:w-3/12 mb-20 self-center justify-self-center"
+        className="md:w-3/12 bg-slate-100 mb-20 self-center justify-self-center"
       />
       <ListaPokemons />;
     </>
