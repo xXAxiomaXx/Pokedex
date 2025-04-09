@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/Images/Logo.png'
 
 const ITEMS_POR_PAGINA = 151;
 
@@ -81,7 +80,6 @@ const ListaPokemons = () => {
 
   return (
     <div className="p-4 bg-slate-100">
-      <img src={Logo} alt="Logo" className="md:w-3/12 mb-20 self-center justify-self-center"/>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-4">
         {pokemons.map((pokemon) => (
           <Link key={pokemon.id} to={`/pokemon/${pokemon.id}`}>
