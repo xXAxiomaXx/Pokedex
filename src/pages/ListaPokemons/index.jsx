@@ -75,7 +75,7 @@ const ListaPokemons = () => {
     }
   };
 
-  if (loading) return <p className="text-center mt-10">Carregando Pokémon...</p>;
+  if (loading) return <p className="text-center h-screen mt-10">Carregando Pokémon...</p>;
   if (error) return <p className="text-center mt-10 text-red-500">{error}</p>;
 
   return (
