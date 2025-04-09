@@ -3,7 +3,7 @@ import Logo from "./assets/Images/Logo.png";
 
 function App() {
   return (
-      <div classname= "bg-slate-100">
+      <div className= "bg-slate-100">
       <img
         src={Logo}
         alt="Logo"
