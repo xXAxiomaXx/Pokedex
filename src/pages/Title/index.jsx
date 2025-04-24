@@ -28,7 +28,7 @@ const Title = () => {
             autoPlay
             loop
             muted
-            className="bg-vid absolute top-0 left-0 block lg:hidden w-full h-full object-cover z-0"
+            className="bg-vid absolute top-0 left-0 block lg:hidden w-full h-screen object-cover z-0"
           >
             <source src={backgroundMobile} type="video/mp4" />
           </video>
