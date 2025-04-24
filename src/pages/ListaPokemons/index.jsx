@@ -22,7 +22,7 @@ const typeColors = {
   fairy: "#D685AD",
 };
 
-const ListaPokemonsPorGeracaoComSelecao = () => {
+const ListaPokemons = () => {
   const [generations, setGenerations] = useState([]);
   const [currentGenerationIndex, setCurrentGenerationIndex] = useState(0);
   const [pokemons, setPokemons] = useState([]);
@@ -189,4 +189,4 @@ const ListaPokemonsPorGeracaoComSelecao = () => {
   );
 };
 
-export default ListaPokemonsPorGeracaoComSelecao;
+export default ListaPokemons;
