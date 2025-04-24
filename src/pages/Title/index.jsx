@@ -46,7 +46,7 @@ const Title = () => {
               Pokémon List
             </a>
           </div>
-          <footer className="z-50 absolute bottom-4 left-0 w-screen flex flex-col items-center">
+          <footer className="z-50 absolute bottom-0 left-0 w-screen flex flex-col items-center">
             <hr className="my-6 border-gray-200 w-11/12 lg:w-8/12 sm:mx-auto lg:my-4" />
             <span className="flex items-center justify-center gap-2 text-sm text-gray-500 sm:text-center">
               © 2025
