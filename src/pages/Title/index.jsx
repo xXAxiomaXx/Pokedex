@@ -46,20 +46,7 @@ const Title = () => {
               Pokémon List
             </a>
           </div>
-          <footer className="z-50 absolute bottom-0 left-0 w-screen flex flex-col items-center">
-            <hr className="my-6 border-gray-200 w-11/12 lg:w-8/12 sm:mx-auto lg:my-4" />
-            <span className="flex items-center justify-center gap-2 text-sm text-gray-500 sm:text-center">
-              © 2025
-              <a
-                href="https://emouradev.vercel.app/"
-                target="_blank"
-                className="hover:underline text-white"
-              >
-                EM Dev
-              </a>
-              | All Rights Reserved.
-            </span>
-          </footer>
+          
         </div>
       </section>
     </>
