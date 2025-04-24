@@ -8,7 +8,7 @@ const Title = () => {
 
   return (
     <>
-      <section className="justify-center items-center h-screen w-screen overflow-hidden">
+      <section className="justify-center overflow-hidden items-center h-screen w-screen">
         <nav className="fixed w-screen z-50 px-6 py-4">
           <img src={Logo} alt="Pokémon Logo" className="w-2/6 lg:w-1/8 z-50" />
         </nav>
@@ -32,7 +32,7 @@ const Title = () => {
           <div className="shadow"></div>
           <div className="flex flex-col justify-around h-full w-full items-center gap-5 z-50">
             <div className="flex flex-col justify-center w-8/12 text-center gap-5 text-white items-center">
-              <h1 className="text-7xl md:text-8xl font-bold font-outline-2">Ready to explore the Pokémon's world??</h1>
+              <h1 className="text-7xl sm:text-8xl font-bold font-outline-2">Ready to explore the Pokémon's world??</h1>
             </div>
             <a
               className="text-white text-2xl z-50 bg-black hover:bg-white hover:text-black hover:border-black duration-150 ease-in-out py-2 px-5 rounded-xl border font-bold"

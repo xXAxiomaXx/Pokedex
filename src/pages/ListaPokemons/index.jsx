@@ -22,7 +22,7 @@ const typeColors = {
   fairy: "#D685AD",
 };
 
-const ListaPokemon = () => {
+const ListaPokemons = () => {
   const [generations, setGenerations] = useState([]);
   const [currentGenerationIndex, setCurrentGenerationIndex] = useState(0);
   const [pokemons, setPokemons] = useState([]);
@@ -102,8 +102,8 @@ const ListaPokemon = () => {
     return <p className="text-center mt-10">Nenhuma geração encontrada.</p>;
 
   return (
-    <div className="bg-slate-800 overflow-x-hidden px-4">
-      <nav className="static w-screen z-50 px-2 py-4 top-0 text-slate-300">
+    <div className="bg-slate-800 w-screen overflow-x-hidden px-4">
+      <nav className="static w-full z-50 px-2 py-4 top-0 text-slate-300">
         <div className=" w-fit flex items-center gap-5">
           <a href="/">
             <i class="bx bx-home-alt text-3xl md:text-4xl hover:scale-110 hover:text-blue-600"></i>
@@ -116,7 +116,7 @@ const ListaPokemon = () => {
             key={generation.name}
             disabled={loading}
             onClick={() => selectGeneration(index)}
-            className={`px-3 py-2 rounded-xl uppercase min-w-30 max-w-30 font-bold self-center ${
+            className={`px-3 py-2 rounded-xl uppercase md:min-w-30 min-w-25 md:max-w-30 max-w-25 font-bold self-center ${
               currentGenerationIndex === index
                 ? "bg-blue-600 text-white"
                 : "bg-slate-400 text-black hover:bg-slate-300 border-black border-2 duration-150 ease-in-out cursor-pointer"
@@ -146,17 +146,17 @@ const ListaPokemon = () => {
                         ?.front_default
                     }
                     alt={pokemon.name}
-                    className="lg:w-40 lg:h-40 h-30 w-30 mx-auto self-center"
+                    className="lg:w-40 lg:h-40 h-25 w-25 mx-auto self-center"
                   />
                 </div>
                 <p className="capitalize mt-2 mb-2 font-semibold">
                   {pokemon.id}. {pokemon.name}
                 </p>
-                <p className="text-lg text-gray-700">
+                <p className="text-sm md:text-lg text-gray-700">
                   {pokemon.types.map((type) => (
                     <span
                       key={type.type.name}
-                      className="px-3 py-1 rounded-full text-white mr-2"
+                      className="px-3 py-1 rounded-full text-white mx-1"
                       style={{
                         backgroundColor: typeColors[type.type.name] || "gray",
                       }}
@@ -171,7 +171,7 @@ const ListaPokemon = () => {
           
         </div>
       )}
-      <footer className="z-50 w-screen flex flex-col mb-6 items-center">
+      <footer className="z-50 w-full flex flex-col pb-2 items-center justify-center">
             <hr className="my-6 border-gray-200 w-11/12 lg:w-8/12 sm:mx-auto lg:my-4" />
             <span className="flex items-center justify-center gap-2 text-sm text-gray-500 sm:text-center">
               © 2025
@@ -189,4 +189,4 @@ const ListaPokemon = () => {
   );
 };
 
-export default ListaPokemon;
+export default ListaPokemons;

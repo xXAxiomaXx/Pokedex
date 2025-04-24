@@ -69,7 +69,7 @@ const Pokemon = () => {
         </Link>
       </nav>
       <section
-        className="mb-10 flex flex-col items-center w-11/12 lg:w-8/12 rounded-xl drop-shadow-2xl bg-slate-200 border-4 p-4"
+        className="mb-10 flex flex-col items-center w-11/12 lg:w-8/12 rounded-xl drop-shadow-2xl bg-slate-200 border-4 px-2 py-4"
         style={{ borderColor: typeColors[mainType] }}
       >
         <div className="flex flex-col lg:flex-row justify-center mb-6 h-full items-center gap-4 lg:w-11/12">
@@ -115,7 +115,7 @@ const Pokemon = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center bg-white w-11/12 h-4/6 rounded-xl  mb-10 py-5">
+        <div className="flex flex-col items-center bg-white w-full lg:w-11/12 h-4/6 rounded-xl  mb-10 py-5">
           <h1 className="text-3xl capitalize mb-6 font-bold">
             {pokemon.id}. {pokemon.name}
           </h1>
@@ -135,10 +135,10 @@ const Pokemon = () => {
           <div className="flex justify-around w-full capitalize">
             <div className=" text-center lg:w-10/12 lg:px-10">
               <h2 className="text-3xl mb-6 font-bold tracking-wider">Stats</h2>
-              <ul className="flex gap-5 w-full items-center justify-between">
+              <ul className="flex gap-4 lg:gap-5 w-full items-center justify-between">
                 {pokemon.stats.map((stat) => (
                   <li className="flex flex-col-reverse items-center gap-2" key={stat.stat.name}>
-                    <h2 className="lg:text-lg font-bold">{stat.stat.name.replace("special-","sp ").replace("attack","Atk").replace("defense","Def").replace("speed","Spd").replace("hp","HP")}</h2>
+                    <h2 className="lg:text-lg font-bold text-wrap">{stat.stat.name.replace("special-","sp ").replace("attack","Atk").replace("defense","Def").replace("speed","Spd").replace("hp","HP")}</h2>
                      
                     <div className="h-30 rounded-sm w-8 flex flex-col-reverse bg-gray-300">
                       <div
@@ -157,7 +157,7 @@ const Pokemon = () => {
           </div>
         </div>
       </section>
-      <footer className="z-50 w-screen flex flex-col items-center">
+      <footer className="z-50 w-full flex flex-col items-center">
             <hr className="my-6 border-gray-200 w-11/12 lg:w-8/12 sm:mx-auto lg:my-4" />
             <span className="flex items-center justify-center gap-2 text-sm text-gray-500 sm:text-center">
               © 2025
