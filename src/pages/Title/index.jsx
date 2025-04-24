@@ -36,7 +36,7 @@ const Title = () => {
             </div>
             <a
               className="text-white text-2xl z-50 bg-black hover:bg-white hover:text-black hover:border-black duration-150 ease-in-out py-2 px-5 rounded-xl border font-bold"
-              href="/ListaPokemons"
+              href="/pokemon"
             >
               Pokémon List
             </a>
