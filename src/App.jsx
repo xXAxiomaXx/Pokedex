@@ -1,16 +1,10 @@
-import ListaPokemons from "./pages/ListaPokemons/index.jsx";
-import Logo from "./assets/Images/Logo.png";
+import Title from "./pages/Title/index.jsx";
 
 function App() {
   return (
-      <div className= "bg-slate-100">
-      <img
-        src={Logo}
-        alt="Logo"
-        className="md:w-3/12 mb-20 self-center justify-self-center"
-      />
-      <ListaPokemons />;
-      </div>
+    <>
+      <Title/>
+    </>
   );
 }
 
