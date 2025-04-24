@@ -7,7 +7,7 @@ import Logo from "../../assets/Images/612ce4761b9679000402af1c.png";
 const Title = () => {
   return (
     <>
-      <section className="flex justify-center overflow-hidden items-center h-screen w-screen">
+      <section className="flex justify-center overflow-y-hidden items-center h-screen w-screen">
         <div className="h-screen w-screen flex flex-col justify-between items-center py-10">
           <nav className=" w-screen z-50 px-6 py-4">
             <img
