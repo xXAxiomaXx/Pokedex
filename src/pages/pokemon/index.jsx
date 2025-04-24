@@ -62,7 +62,7 @@ const Pokemon = () => {
     <div className="w-screen min-h-screen py-4 flex flex-col items-center justify-center bg-slate-800 select-none">
       <nav className="w-screen flex px-3 mb-10">
         <Link
-          to="/ListaPokemons"
+          to="/pokemon"
           className="flex text-xl gap-1 items-center justify-center top-4 left-4 text-white font-bold"
         >
           <i class="bx bx-arrow-back text-xl"></i> Back
