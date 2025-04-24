@@ -8,7 +8,7 @@ const Title = () => {
 
   return (
     <>
-      <section className="justify-center items-center h-screen w-screen overflow-x-hidden">
+      <section className="justify-center items-center h-screen w-screen overflow-hidden">
         <nav className="fixed w-screen z-50 px-6 py-4">
           <img src={Logo} alt="Pokémon Logo" className="w-2/6 lg:w-1/8 z-50" />
         </nav>
