@@ -9,7 +9,7 @@ const Title = () => {
     <>
       <section className="flex justify-center overflow-y-hidden items-center h-screen w-screen">
         <div className="h-screen w-screen flex flex-col justify-between items-center py-10">
-          <nav className=" w-screen z-50 px-6 py-4">
+          <nav className="w-screen z-50 px-6 py-4">
             <img
               src={Logo}
               alt="Pokémon Logo"
@@ -46,7 +46,7 @@ const Title = () => {
               Pokémon List
             </a>
           </div>
-          
+        
         </div>
       </section>
     </>
