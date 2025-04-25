@@ -20,7 +20,7 @@ const Title = () => {
             autoPlay
             loop
             muted
-            className="bg-vid hidden lg:block absolute top-0 left-0 w-full h-screen object-cover z-0"
+            className="bg-vid hidden lg:block fixed top-0 left-0 w-screen h-screen object-cover z-0"
           >
             <source src={background} type="video/mp4" />
           </video>
@@ -28,7 +28,7 @@ const Title = () => {
             autoPlay
             loop
             muted
-            className="bg-vid absolute top-0 left-0 block lg:hidden w-full h-screen object-cover z-0"
+            className="bg-vid fixed top-0 left-0 block lg:hidden w-screen h-screen object-cover z-0"
           >
             <source src={backgroundMobile} type="video/mp4" />
           </video>
